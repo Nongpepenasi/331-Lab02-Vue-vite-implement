@@ -13,5 +13,5 @@ app.use(router)
 
 app.mount('#app')
 
-let x = 'helxysx'
-console.log(x)
+// let x = 'helxysx'
+// console.log(x)
