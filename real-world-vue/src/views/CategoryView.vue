@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import Category from '../components/Category.vue'
-import { events } from '@/events';
+// import { events } from '@/events';
+import type { EventItem } from '@/type'
+import { ref, type Ref} from 'vue'
+import EventService from '@/services/EventService'
+
+const events: Ref<Array<EventItem>> = ref([])
+  
+  EventService.getEvent().then((response) => {
+    events.value = response.data
+    console.log(events.value)
+  })
 </script>
 
 <template>

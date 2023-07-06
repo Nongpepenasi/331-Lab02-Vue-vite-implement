@@ -9,3 +9,14 @@
     petsAllowed: boolean
     organizer: string
  }
+
+ export interface StudentItem {
+   id:  number
+   studentId: string
+   name: string
+   surname: string
+   gpa: string
+   image: string
+   penAmount: string
+   description: string
+}
